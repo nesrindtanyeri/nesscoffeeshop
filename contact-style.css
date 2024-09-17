@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f6d365, #fda085); /* Soft gradient background */
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(45deg, #ff8a65, #ffb74d); /* Navbar gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+ul li a:hover {
+    color: #333;
+    transform: scale(1.1); /* Hover effect */
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ff6f61;
+    margin-top: 2rem;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Contact Details Styling */
+div {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+}
+
+div:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ff8a65;
+    margin-bottom: 1rem;
+}
+
+/* Image Styling */
+div img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+div img:hover {
+    transform: scale(1.05); /* Image zoom effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+}
+
+input[type="name"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="name"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #ff6f61;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background: #ff8a65;
+    transform: scale(1.05); /* Hover effect for button */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    div {
+        padding: 1rem;
+    }
+
+    button[type="submit"] {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
